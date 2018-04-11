@@ -1,0 +1,22 @@
+---
+parent: "api_v1_orgs_add-member"
+name: "api_v1_orgs_add-member_post_create_abstract"
+description: null
+type: "ABSTRACT"
+endpoint: "/api/v1/orgs/add-member"
+method: "POST"
+auth: ""
+headers:
+- "Accept: application/json"
+- "Content-Type: application/json"
+testCases:
+- id: 1
+  body: "{\"email\":null,\"inactive\":null,\"orgId\":null,\"orgRole\":null}"
+  inactive: false
+assertions:
+- "@StatusCode == 200"
+tags:
+- "V1"
+authors:
+- "FX Bot"
+inactive: false
